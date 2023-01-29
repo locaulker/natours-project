@@ -1,0 +1,18 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* Note: This is NOT typography.
+     Rather it is a global definition of what 1rem should be 
+  */
+  font-size: 62.5%; /* (10px/16px) * 100% (So: .625 * 16px = 10px) */
+}
+
+body {
+  box-sizing: border-box;
+}
