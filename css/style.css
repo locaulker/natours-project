@@ -51,10 +51,17 @@ Note: 1em = 16px
 
 html {
   /* Note: This is NOT typography.
-     Rather it is a global definition of what 1rem should be 
+     Rather it is a global definition of what 1rem should be.
+    
+    Note: (10px/16px) * 100% = (0.625 * 100) = 10px = 1rem
   */
   font-size: 62.5%;
-  /* (10px/16px) * 100% (So: .625 * 16px = 10px) */ }
+  /* 
+   @include respond(phone) {
+   width < 600px
+   font-size: 30%; // 1rem = 4.8px
+   }
+   */ }
   @media (max-width: 75em) {
     html {
       font-size: 56.25%; } }
