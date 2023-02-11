@@ -2,12 +2,9 @@
 0 - 600px:      Phone
 600 - 900px:    Tablet (Portrait Mode)
 900 - 1200px:   Tablet (Landscape Mode)
-
 1200 - 1800     Normal Styles (for Desktop-First Approach)
-
 1800px + :      (Big DeskTop)
-*/
-/*
+
 $breakpoint argument options include:
 - phone
 - tab-port
@@ -58,12 +55,15 @@ html {
   */
   font-size: 62.5%;
   /* (10px/16px) * 100% (So: .625 * 16px = 10px) */ }
-  @media (max-width: 600px) {
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media (max-width: 37.5em) {
+  @media (min-width: 112.5em) {
     html {
-      font-size: 50%; } }
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
