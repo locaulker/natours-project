@@ -1,3 +1,22 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet (Portrait Mode)
+900 - 1200px:   Tablet (Landscape Mode)
+
+1200 - 1800     Normal Styles (for Desktop-First Approach)
+
+1800px + :      (Big DeskTop)
+*/
+/*
+$breakpoint argument options include:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+Note: 'em' work better for media queries instead of 'rem'
+Note: 1em = 16px
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -39,6 +58,12 @@ html {
   */
   font-size: 62.5%;
   /* (10px/16px) * 100% (So: .625 * 16px = 10px) */ }
+  @media (max-width: 600px) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box; }

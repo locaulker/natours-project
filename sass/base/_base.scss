@@ -11,6 +11,14 @@ html {
      Rather it is a global definition of what 1rem should be 
   */
   font-size: 62.5%; /* (10px/16px) * 100% (So: .625 * 16px = 10px) */
+
+  @include respond-phone {
+    font-size: 50%;
+  }
+
+  @include respond(phone) {
+    font-size: 50%;
+  }
 }
 
 body {
